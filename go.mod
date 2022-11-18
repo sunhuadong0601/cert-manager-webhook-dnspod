@@ -1,6 +1,6 @@
 module github.com/jetstack/cert-manager-webhook-dnspod
 
-go 1.14
+go 1.19
 
 require (
 	github.com/jetstack/cert-manager v0.13.1
