@@ -29,7 +29,7 @@ clusterIssuer:
 # imagePullSecrets:
 #   - name: regcred
 image:
-  repository: qqshfox/cert-manager-webhook-dnspod
+  repository: sunhuadong/cert-manager-webhook-dnspod
   #tag: latest
   pullPolicy: IfNotPresent
 

@@ -1,6 +1,4 @@
-FROM golang:1.19.0-alpine AS build_deps
-
-RUN apk add --no-cache git
+FROM golang:1.19-alpine3.16 AS build_deps
 
 WORKDIR /workspace
 ENV GO111MODULE=on
@@ -9,6 +7,7 @@ COPY go.mod .
 COPY go.sum .
 
 RUN go mod download
+RUN go mod vendor
 
 FROM build_deps AS build
 
